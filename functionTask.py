@@ -10,14 +10,21 @@ print()
 functionNew('john','Abraham')     
 print()   
 
-#In this example we call function without argument so it uses the default value that we gave in function parameter. 
-def functionTest(age = 24) :
-    print(f'my age =', age)
+#Aggregation function 
+def practice(num1, num2) :
+    print('add =',num1 + num2)
+    print('sub =',num2 - num1)
+    print('multi =',num2 * num1)
+    print('div =',num1/num2)
 
-functionTest(42)
-functionTest(50)
-functionTest()
+print('result of 1st set')
+numbers1 = practice(5 , 10)
 print()
+print('result of 2nd set')
+numbers2 = practice(7, 9)
+print()
+print()
+
 
 #create a bookstore function and insert some data in the function.
 def bookStore(bookId, bookName, category, price, quantity) :
